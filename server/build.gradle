@@ -43,11 +43,12 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
+    implementation 'mysql:mysql-connector-java:8.0.21'
         // 오라클 클라우드 접속하기 위한 라이브러리
-    runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
-    implementation 'com.oracle.database.security:osdt_cert'
-    implementation 'com.oracle.database.security:oraclepki'
-    implementation 'com.oracle.database.security:osdt_core'
+//    runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
+//    implementation 'com.oracle.database.security:osdt_cert'
+//    implementation 'com.oracle.database.security:oraclepki'
+//    implementation 'com.oracle.database.security:osdt_core'
 
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
