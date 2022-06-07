@@ -29,7 +29,7 @@ bin/
 
 ### JPA ###
 
-**/resources
+**/resources/application.yml
 
 
 ### test ###
