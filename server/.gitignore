@@ -35,3 +35,4 @@ bin/
 ### test ###
 **/test
 
+**/main/java/com/example/server/config/jwt/JwtProperties.java
