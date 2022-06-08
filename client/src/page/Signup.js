@@ -27,7 +27,7 @@ export const Signup = () => {
   }
 
   const postEnroll = () => {
-    axios.post("http://localhost:8080/signup", {
+    axios.post("http://52.9.214.153:8080/signup", {
       username    : info.username,
       password: info.password,
       roles    : AuthInfo[info.auth],
