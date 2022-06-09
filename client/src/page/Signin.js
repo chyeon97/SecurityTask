@@ -21,7 +21,9 @@ export const Signin = () => {
   }
 
   const postLogin = () =>{
-    axios.post("http://localhost:8080/login",{
+    //http://localhost:8080/login
+    
+    axios.post("http://52.9.214.153:8080/login",{
       username:info.username,
       password:info.password
     }).then(function (res){
