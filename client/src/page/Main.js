@@ -13,7 +13,7 @@ export const Main = () => {
       },
     }
 
-    axios.get("http://localhost:8080/api/user", config).then((res) => {
+    axios.get("http://52.9.214.153:8080/api/user", config).then((res) => {
       if(res.data && res.data.resCode === 1){
         alert("새로고침을 시도하세요")
         getRefreshToken();
@@ -30,7 +30,7 @@ export const Main = () => {
         Authorization: localStorage.getItem("ACCESS_TOKEN")
       },
     }
-    axios.get("http://localhost:8080/api/admin", config).then((res) => {
+    axios.get("http://52.9.214.153:8080/api/admin", config).then((res) => {
       res.status === 200 && history.push("/api/admin")
     }).catch((err) => {
       alert("관리자 권한이 없습니다.")
@@ -46,7 +46,7 @@ export const Main = () => {
       },
     }
 
-    axios.get("http://localhost:8080/api/user", config).then((res) => {
+    axios.get("http://52.9.214.153:8080/api/user", config).then((res) => {
       console.log(res)
       if(res.data && res.data.resCode === 2) history.push("/")
 
